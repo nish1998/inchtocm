@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <body style="background-color:#e6faff">
-<h1 class="text-center text-primary" style="background-color:#b3f0ff; margin-top:0px; padding:5px 0 5px 0;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">INCH to CM converto</h1>
+<div class="header"><h1 class="text-center text-primary" style="background-color:#b3f0ff; margin-top:0px; padding:5px 0 5px 0;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">INCH to CM converto</h1>
 <br>
 <div class="text-center">
 
@@ -17,7 +18,7 @@
 <button class="btn btn-primary" id="but">Convert</button>
 <br><br>
 <div style="background-color:#b3f0ff; padding:5px 0 15px 0"><h3 class="text-success">Output</h3>
-<div id="cm" class="text-default"></div></div>
+	<div id="cm" class="text-default"></div></div></div>
 
 
 
@@ -33,6 +34,10 @@ document.getElementById("but").onclick=function(){
 
 };
 
+$(document).ready(function(){
+	$(".header").hide();
+	$(".header").fadeIn(1000);
+})
 
 	
      
